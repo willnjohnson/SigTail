@@ -1,4 +1,4 @@
-# SigTail (Digital Profile Verification)
+<img width="2280" height="680" alt="sigtail_logo2" src="https://github.com/user-attachments/assets/ebd7fc95-9999-4a2e-93ab-e1443efb3450" />
 
 SigTail is a utility designed to generate Ed25519 cryptographic key pairs, facilitate the signing of digital messages (such as profile URLs), and export public keys in the JSON Web Key (JWK) format. Its primary purpose is to provide a mechanism for users to cryptographically assert ownership or association with online profiles by publishing a verifiable public key and a signed message.
 
@@ -9,7 +9,7 @@ The project consists of two main components:
     *   Sign a specified URL (e.g., a social media profile URL) using their private key, producing a Base64-encoded signature.
     *   Export their public key in JWK format.
     *   Manage and copy the generated signature string in a specific `sigtail:<pastebin_id>::<signature>` format, ready for embedding into online profiles or other text fields.
-    *   Manage the Pastebin ID where the public key is hosted.
+    *   Manage the Pastebin ID where the public key is hosted. The Pastebin ID is your **identifier**.
 
 2.  **SigTail Verifier Userscript (Tampermonkey/Greasemonkey):** A browser userscript designed to scan webpages for `sigtail:` strings, retrieve the corresponding public key from a specified Pastebin URL, and cryptographically verify the embedded signature against a known message (e.g., the current page's URL). If successful, the script replaces the `sigtail:` string with a visual "verified" indicator; otherwise, it displays a "verification failed" status.
 
