@@ -1,5 +1,7 @@
 <img width="2280" height="680" alt="sigtail_logo2" src="https://github.com/user-attachments/assets/ebd7fc95-9999-4a2e-93ab-e1443efb3450" />
 
+sigtail:a0xEcXYY::Tt0epnFZP9VXMjr/+bA/ckIkWYwp36Q1+JGDHEWjDHfhVf2mwF/Igg6GCmY1H2RVqLdu7s7AGy+lN8OtDIpYDQ==
+
 SigTail is a utility designed to generate Ed25519 cryptographic key pairs, facilitate the signing of digital messages (such as profile URLs), and export public keys in the JSON Web Key (JWK) format. Its primary purpose is to provide a mechanism for users to cryptographically assert ownership or association with online profiles by publishing a verifiable public key and a signed message.
 
 The project consists of two main components:
