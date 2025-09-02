@@ -15,7 +15,11 @@ The project consists of two main components:
 
 ## Preview
 
+### SigTail Verification on X
 https://github.com/user-attachments/assets/58436100-b937-447d-9599-adbadff6bdb0
+
+### SigTail Verification on Github
+<img width="1034" height="504" alt="image" src="https://github.com/user-attachments/assets/7aadb319-24a9-47b8-902f-8ad991ba2ebe" />
 
 ## Installation
 
