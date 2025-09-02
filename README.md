@@ -16,10 +16,19 @@ The project consists of two main components:
 ## Preview
 
 ### SigTail Verification on X
-https://github.com/user-attachments/assets/58436100-b937-447d-9599-adbadff6bdb0
+https://github.com/user-attachments/assets/2cb37186-acf0-4488-a712-526b78ad4a39
+
+* Both X accounts have the signature: `sigtail:a0xEcXYY::vQ7nWP5cZyaQcuSRb2ZJtHiyoN0bVogM7SpcpPd3pIo+Fsgn1ruKzgbr1pocbPj/aR1zCnmZpOOA42gCd5J0AQ==`
+* The signature is valid for `willnjohnson` but invalid for `guiled`
+
+<br>
 
 ### SigTail Verification on Github
-<img width="1034" height="504" alt="image" src="https://github.com/user-attachments/assets/7aadb319-24a9-47b8-902f-8ad991ba2ebe" />
+<img width="1043" height="523" alt="image" src="https://github.com/user-attachments/assets/35e63bf0-a6f1-43b1-9c9a-b7ecbc47120a" />
+
+* You can even add the badge to your Github's README.md
+
+<br>
 
 ## Installation
 
