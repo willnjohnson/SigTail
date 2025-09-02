@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SigTail Verifier
 // @namespace    GreaseMonkey
-// @version      1.0
+// @version      1.1
 // @description  Replaces SigTail strings with verified status badge using Ed25519 signature verification.
 // @author       @willnjohnson
 // @match        *://*/*
@@ -54,7 +54,15 @@
             const fullMatch = match[0];
             const pasteId = match[1];
             const signatureB64 = match[2];
-            const message = window.location.href;
+
+            // Normalize URL for verification
+            const url = new URL(window.location.href);
+            let normalized = url.origin + url.pathname;
+            // Strip trailing slash except for root
+            if (normalized.endsWith("/") && normalized !== url.origin + "/") {
+                normalized = normalized.slice(0, -1);
+            }
+            const message = normalized;
 
             verifySigTail(pasteId, signatureB64, message).then(valid => {
                 const badgeHTML = createBadgeHTML(valid, pasteId);
@@ -65,13 +73,13 @@
             });
         });
     }
-  
-    function createBadgeHTML(valid, pasteId) {
-      const color = valid ? "#28a745" : "#dc3545"; // green / red
-      const mainText = valid ? "SigTail Verified" : "SigTail Verification Failed";
-      const iconSVG = valid ? checkSVG() : crossSVG();
 
-      return `
+    function createBadgeHTML(valid, pasteId) {
+        const color = valid ? "#28a745" : "#dc3545"; // green / red
+        const mainText = valid ? "SigTail Verified" : "SigTail Verification Failed";
+        const iconSVG = valid ? checkSVG() : crossSVG();
+
+        return `
         <span style="
           display: inline-flex;
           align-items: center;
@@ -113,7 +121,6 @@
         </span>
       `;
     }
-
 
     function checkSVG() {
         return `
