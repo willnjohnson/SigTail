@@ -104,6 +104,7 @@
           ">
             Public ID: <code style="
               background: rgba(255,255,255,0.2);
+              color: white;
               padding: 0 4px;
               border-radius: 3px;
               font-family: monospace;
