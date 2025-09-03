@@ -18,7 +18,7 @@ The project consists of two main components:
 ## Preview
 
 ### SigTail Verification on X
-https://github.com/user-attachments/assets/2cb37186-acf0-4488-a712-526b78ad4a39
+![demo](https://github.com/user-attachments/assets/fb8a32d1-2711-45a3-a6bd-00500a6de790)
 
 * Both X accounts have the signature: `sigtail:a0xEcXYY::vQ7nWP5cZyaQcuSRb2ZJtHiyoN0bVogM7SpcpPd3pIo+Fsgn1ruKzgbr1pocbPj/aR1zCnmZpOOA42gCd5J0AQ==`
 * The signature is valid for `willnjohnson` but invalid for `guiled`
